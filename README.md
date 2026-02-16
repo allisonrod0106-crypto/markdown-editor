@@ -15,3 +15,17 @@ node app.js
 - Persists text using localStorage
 - Persists theme using localStorage
 - Responsive (stacked mobile/split desktop)
+
+# Milestone Quiz 
+
+What is the purpose of git command? 
+The git command saves the changes locally
+
+What happens when you push to GitHub? 
+The push command saves the changes remotely 
+
+Why should we commit multiple times instead of once at the end? 
+Saving changes locally helps to keep track of details and provides better control over the projects evolution. It helps to ensures that the project is ready to be shared and collaborated with. 
+
+What is the difference between local repository and remote repository?
+The local repository is only accessible on your computer while a remote repository is accesible on GitHub when you log in from any device.
