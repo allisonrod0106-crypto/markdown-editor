@@ -32,7 +32,14 @@ The local repository is only accessible on your computer while a remote reposito
 
 # Milestone 2 Quiz 
 
-1. What does display: flex do?
-2. What is a media query?
-3. Why should responsive design be handled in CSS, not JavaScript?
-4. What happens if media query is placed before base styles?
+What does display: flex do?
+display: flex allows you to control alignment and layment of a container
+
+What is a media query?
+A media query is a way to apply styles in CSS under certain conditions. 
+
+Why should responsive design be handled in CSS, not JavaScript?
+CSS is faster as it is interepreted by the browser and JavaScript runs after the page loads. CSS is more responsive and allows for cleaner code.  
+
+What happens if media query is placed before base styles?
+CSS rules are applied in order, so the base style would overrule the media query if it came first. 
