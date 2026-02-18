@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Markdown Editor</title>
+  <meta charset="UTF-8" />
+    <!-- bootstrap -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"/>
+    <!-- material icons -->
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"/>
+
+</head>
+<body>
+    <div id="app" class="editor-container">
+        <textarea v-model="markdown" class="form-control" rows="10"></textarea>
+
+        <div v-html="compiledMarkdown" class="form-control"></div>
+
+        <div id="counter"></div>
+
+        <span id="themeToggle" class="material-icons">
+            dark_mode
+        </span>
+    </div>
+
+    <!-- vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@17.0.1/marked.min.js"></script>
+    <!-- bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const toggle = document.getElementById("themeToggle");
+        toggle.addEventListener("click", () => {
+            const isDark = document.documentElement.getAttribute("data-bs-theme") === "dark";
+        
+            if (isDark) {
+                document.documentElement.setAttribute("data-bs-theme", "light") 
+                toggle.textContent = "dark_mode"; 
+            } else {
+                document.documentElement.setAttribute("data-bs-theme", "dark")
+                toggle.textContent = "light_mode";
+            }
+        });
+    </script>
+
+    <style>
+    /* base style */
+    .editor-container {
+        display: flex; 
+        flex-direction: column;
+    }
+    #input,
+    #output {
+        flex: 1;
+    }
+    /* <!-- media query (comes after base styles) --> */
+    @media (min-width: 768px){
+        .editor-container {
+            flex-direction: row; 
+        }
+    }
+    #themeToggle {
+        position: absolute; 
+        top: 10px; 
+        right: 10px; 
+    }
+    </style>
+</body>
+</html>

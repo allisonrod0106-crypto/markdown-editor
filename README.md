@@ -16,7 +16,7 @@ node app.js
 - Persists theme using localStorage
 - Responsive (stacked mobile/split desktop)
 
-# Milestone Quiz 
+# Milestone 1 Quiz 
 
 What is the purpose of git command? 
 The git command saves the changes locally
@@ -29,3 +29,10 @@ Saving changes locally helps to keep track of details and provides better contro
 
 What is the difference between local repository and remote repository?
 The local repository is only accessible on your computer while a remote repository is accesible on GitHub when you log in from any device.
+
+# Milestone 2 Quiz 
+
+1. What does display: flex do?
+2. What is a media query?
+3. Why should responsive design be handled in CSS, not JavaScript?
+4. What happens if media query is placed before base styles?
