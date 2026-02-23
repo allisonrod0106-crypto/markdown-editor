@@ -1,0 +1,42 @@
+body {
+    padding: 20px;
+}
+
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.editor-container textarea,
+.editor-container .preview {
+    flex: 1;
+    min-height: 200px;
+}
+
+.preview {
+    border: 1px solid var(--bs-border-color);
+    padding: 10px;
+    background: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    overflow: auto;
+}
+
+@media (min-width: 768px) {
+    .editor-container {
+        flex-direction: row;
+    }
+    .editor-container textarea,
+    .editor-container .preview {
+        width: 50%;
+    }
+}
+
+.theme-toggle {
+    position: absolute;  
+    top: 10px;           
+    right: 10px;         
+    cursor: pointer;     
+    font-size: 28px;     
+    z-index: 1000;      
+  }

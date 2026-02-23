@@ -43,3 +43,17 @@ CSS is faster as it is interepreted by the browser and JavaScript runs after the
 
 What happens if media query is placed before base styles?
 CSS rules are applied in order, so the base style would overrule the media query if it came first. 
+
+#Milesone 3 Quiz
+
+What is the difference between `data` and `computed` in Vue?
+Data holds reactive states like "message" and it triggers a re-render part of the DOM. Computed holds derived or calucated values based on data (ex. htmlOutput)
+
+Why should we not manipulate DOM manually in Vue?
+Vue uses a virtual DOM to manage the real DOM. If you manipulate it manually (with getElementByID or addEventListener) it conflicts with Vue's rendering and creates unexpected behavior. 
+
+What does `v-html` do?
+Injects raw HTML into a DOM element. 
+
+Why must we strip HTML before counting characters?
+The editor converts Markdown to HTML. 
