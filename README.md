@@ -57,3 +57,17 @@ Injects raw HTML into a DOM element.
 
 Why must we strip HTML before counting characters?
 The editor converts Markdown to HTML. 
+
+# Milestone 4 Quiz
+
+What is localStorage?
+It is a browser feature that allows you to store data as key-value pairs. The data stored here persists across page reloads and browser restarts. 
+
+When does `mounted()` run?
+It is a lifecycle hook in Vue that runs after the component is mounted to the DOM. 
+
+What is a Vue watcher?
+It observes a reactive property and runs a function when it changes. 
+
+Why should theme state also be persisted?
+Users expect their chosen theme to stick between page reloads. 
